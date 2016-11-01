@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html> 
+
+<head> 
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="vierwport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #ffff;
+      margin: 20px;
+      height: 70%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+    }
+    .sidearticle{
+      background-color: #ffff;
+	  margin: 20px;
+	  height: auto;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  text-align: center;
+    }
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color:#41c99e;
+      color: white;
+      padding: 15px;
+      text-align:center;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+
+	.progress {
+		background: rgba(255, 255, 255, 1); 
+		background: -webkit-linear-gradient(top, rgba(217, 221, 235, 1) 0%, rgba(255, 255, 255, 1) 100%); 
+		background: linear-gradient(to bottom, rgba(217, 221, 235, 1) 0%, rgba(255, 255, 255, 1) 100%); 
+		border: 0px solid rgba(255, 255, 255, 1); 
+		border-radius: 12px; height: 20px;
+	}
+	.progress-bar-custom {background: rgba(65, 201, 158, 1);}
+
+
+  </style>
+<body style="background-color: #f1f1f1;">
+
+<div class="container-fluid">
+
+	<div class="row content">
+
+		<!--left side-->
+		<div class="col-sm-3 sidenav">
+			<img src="https://avatars3.githubusercontent.com/u/20400970?v=3&u=fd92c32a0f5765e89a4ede55d6b6602cad6adbaa&s=140" class="img-rounded" style="width:100%; padding-top:20px" alt="Avatar">
+
+			<h4>Luan de Souza de Paiva</h4><br>
+			
+			<p><i class="glyphicon glyphicon-briefcase" style="color:#41c99e"></i> Computer Engeneer</p>
+	        <p><i class=""></i></p>
+	        <p><i class=""></i>ex@mail.com</p>
+	        <p><i class=""></i>1224435534</p>
+	        <hr>
+
+			<h4 id="skills"><span class="glyphicon glyphicon-wrench" style="color:#41c99e"></span> Skills</h4>
+			
+			<div class="progress">
+		    	<div class=" progress-bar progress-bar-custom" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" 
+		    	style="width:30%;">C++</div>
+			</div>
+
+			<div class="progress">
+		    	<div class=" progress-bar progress-bar-custom" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+		    	style="width:30%">Agile Scrum</div>
+			</div>
+
+			<div class="progress">
+		    	<div class=" progress-bar progress-bar-custom" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+		    	style="width:30%">C#</div>
+			</div>
+
+			<div class="progress">
+		    	<div class=" progress-bar progress-bar-custom" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" 
+		    	style="width:30%">ASP.NET</div>
+			</div>
+
+			<div class="progress">
+		    	<div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" 
+		    	style="width:20%">HTML</div>
+			</div>
+
+			<div class="progress">
+		    	<div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" 
+		    	style="width:20%">CSS</div>
+			</div>
+
+			<div class="progress">
+		    	<div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" 
+		    	style="width:5%">JavaScript</div>
+			</div><hr>
+			
+
+			<h4 id="languages"><span class="glyphicon glyphicon-bullhorn" style="color:#41c99e"></span> Languages</h4>
+				<div class="progress">
+			    	<div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
+			    	style="width:70%">English</div>
+				</div>
+
+				<div class="progress">
+			    	<div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" 
+			    	style="width:99%">Portuguese</div>
+				</div>
+
+			<h4 id="hobbies"><span class="glyphicon glyphicon-sunglasses" style="color:#41c99e"></span> Hobbies</h4>
+				<span class="label label-info">Basketball</span>
+				<span class="label label-info">Guitar</span>
+				<span class="label label-info">Inventions</span>
+				<span class="label label-info">Listen Music</span>
+		</div>
+
+			<!--center-->
+			<div class="col-sm-8 sidearticle">
+      		
+	      		<h2 id="about"><span class="glyphicon glyphicon-leaf" style="color:#41c99e"></span> About me</h2>
+				<p>
+				 I'm an enthusiastic person with the idea to create, invent and solve problems efficiently with elegance. 
+				It's awesome when we make the engineering walks with design in same line.
+				</p><br><br>
+			</div>
+
+			<div class="col-sm-8 sidearticle">
+				<h2 id="qualities"><span class="glyphicon glyphicon-cog" style="color:#41c99e"></span> Qualifications</h2>
+				<p>Over two years of experience in customer service and frequent function changes in business</p><br><br>	
+			</div>
+
+			<div class="col-sm-8 sidearticle">
+				<h2 id="education"><span class="glyphicon glyphicon-education" style="color:#41c99e"></span> Education</h2>
+				<p>University: Universidade Paulista</p>
+				<p>Curse: Computer Engeneering </p><br><br>
+			</div>
+
+			<div class="col-sm-8 sidearticle">
+				<h2 id="experiences"><span class="glyphicon glyphicon-globe" style="color:#41c99e"></span> Work Experiences</h2>
+				<h3>Intern in Avenue Code</h3>
+				<i>Since 07/16</i>
+				<dl>
+					<dt>Job rotation, know and apply the knowledge of the following areas in internal projects:</dt>
+					<dd>- Quality Assurance (QA)</dd>
+					<dd>- User Interface (UI)</dd>
+					<dd>- .NET</dd>
+					<dd>- Ruby</dd>
+				</dl><br>
+				<hr><br>
+				<h3>Adminitrative officer in Instituto de Assistencia Medica ao Servidor Publico Estadual (IAMSPE)</h3>
+				<i>From 03/2013 to 06/2016</i>
+				<dl>
+					<dt>Main responsibilities exercised in the pharmacy sector:</dt>
+					<dd>- Assistance to deliverers and business representatives;</dd>
+					<dd>- Medicines conference;</dd>
+					<dd>- Launches invoices systems (internal) control and payment;</dd>
+					<dd>- Completion of drug procurement processes;</dd>
+				</dl>
+			</div>
+	</div>
+	
+</div>
+<footer class="container-fluid">
+  <p>Luan de Souza de Paiva</p>
+  <p><a href="#about">Go to the top</a></p>
+</footer>
