@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html> 
+
+<head> 
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="vierwport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style3.css" rel="stylesheet">
+	<script src="js/jQuery.min.js"></script>
+    <script src="js/handlebars-v4.0.5.js"></script>
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+	<div class="row content">
+
+		<!--left side-->
+		<div class="col-sm-3 sidenav">
+			<img src="https://avatars3.githubusercontent.com/u/20400970?v=3&u=fd92c32a0f5765e89a4ede55d6b6602cad6adbaa&s=140" class="img-rounded" 
+			width= 100%; alt= "Avatar">
+
+			<h4>Luan de Souza de Paiva</h4><br>
+			
+			<p><i class="glyphicon glyphicon-briefcase" style="color:#41c99e"></i> Computer Engeneer</p>
+	        <p><i class=""></i></p>
+	        <p><i class=""></i>ex@mail.com</p>
+	        <p><i class=""></i>12334455</p>
+	        <hr>
+
+			<h4 id="skills"><span class="glyphicon glyphicon-wrench" style="color:#41c99e"></span> Skills</h4>
+
+			<div id="skills-replace"></div>
+			<script id="template-3" type="text/x-handlebars-template">
+				{{#each this}}
+					<div id="myProgress" class="progress">
+				    	<div id="myBar" class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="{{this.value}}" aria-valuemin="0" aria-valuemax="100" style="width:{{this.value}}%" > 
+				    		{{this.skillName}}
+				    	</div>
+			    	</div>
+			    {{/each}}
+
+			    
+			</script>
+
+			
+		
+
+			<h4 id="languages"><span class="glyphicon glyphicon-bullhorn" style="color:#41c99e"></span> Languages</h4>
+				<div class="progress" >
+			    	<div id="language1Bar" class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">English</div>
+				</div>
+
+				<div class="progress">
+			    	<div id= "language2Bar" class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >Portuguese</div>
+				</div><hr>
+
+			<h4 id="hobbies"><span class="glyphicon glyphicon-sunglasses" style="color:#41c99e"></span> Hobbies</h4>
+				<span class="label label-info">Basketball</span>
+				<span class="label label-info">Guitar</span>
+				<span class="label label-info">Inventions</span>
+				<span class="label label-info">Listen Music</span>
+		</div>
+
+			<!--center-->
+			<script id="template-1" type="text/x-handlebars-template">
+				<div class="col-sm-8 sidearticle">
+		      		<h2>
+		      			<span class="glyphicon glyphicon-{{icon}}" style="color:#41c99e"></span> {{title}}
+	      			</h2>
+					<p>
+						{{content}}
+					</p>
+					<p>
+						{{content2}}
+					</p>
+					<br>
+					<br>
+				</div>
+			</script>
+			<div id="about"></div>
+			<div id="qualities"></div>
+			<div id="education"></div>
+			
+			
+				<div class="col-sm-8 sidearticle">
+					
+					<h2>
+						<span class="glyphicon glyphicon-globe" style="color:#41c99e"></span> Work Experiences
+					</h2>	
+					<script id="template-2" type="text/x-handlebars-template">
+						{{#each this}}
+							<h3>{{this.subTitle}}</h3>
+							<i>{{this.since}}</i>
+							<p>{{this.taskTitle}}</p>
+							<ul>
+								{{#each mainlyTasks}}
+									<li>{{this}}</li>
+								{{/each}}
+							</ul>
+							
+						{{/each}}
+					</script>
+					<div id="experiences"></div>
+					<div id="experiences2"></div>
+
+				</div>
+				
+			
+			
+	</div>
+	
+</div>
+<footer class="container-fluid">
+  <p>Luan de Souza de Paiva</p>
+  <p><a href="#about">Came back to About me</a></p>
+</footer>
+	<script src="js/main.js"></script>
+</body>
